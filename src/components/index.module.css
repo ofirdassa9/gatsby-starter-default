@@ -45,9 +45,7 @@
 }
 
 .textCenter {
-  display: flex;
-  justify-content: center;
-  direction: rtl;
+  direction: auto;
   text-align: center;
 }
 
