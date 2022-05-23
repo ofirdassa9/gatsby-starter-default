@@ -64,7 +64,7 @@ const IndexPage = () => (
     <Seo title="Home" />
     <div className={styles.textCenter}>
       <h1>
-        <b>Roy Rotem Advocate</b>
+        <b>רועי רותם, משרד עו"ד</b>
       </h1>
       <p className={styles.intro}>
         <b></b>{" "}
