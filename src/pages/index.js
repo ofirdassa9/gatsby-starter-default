@@ -77,9 +77,7 @@ const IndexPage = () => (
       </p>
       <ul>
           <b><h1>מי אני</h1></b>
-          <p className={styles.textCenter}>
-            פסקה קצרה
-          </p>
+          <h4>פסקה קצרה</h4>
       </ul>
     </div>
     {moreLinks.map((link, i) => (
