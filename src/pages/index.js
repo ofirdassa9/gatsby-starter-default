@@ -39,10 +39,10 @@ const samplePageLinks = [
 ]
 
 const moreLinks = [
-  { text: "Join us on Discord", url: "https://gatsby.dev/discord" },
+  { text: "Facebook", url: "https://facebook.com" },
   {
-    text: "Documentation",
-    url: "https://gatsbyjs.com/docs/",
+    text: "Instagram",
+    url: "https://instagram",
   },
   {
     text: "Starters",
@@ -56,7 +56,6 @@ const moreLinks = [
     text: "Contributing",
     url: "https://www.gatsbyjs.com/contributing/",
   },
-  { text: "Issues", url: "https://github.com/gatsbyjs/gatsby/issues" },
 ]
 
 const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=default-starter`
@@ -86,6 +85,10 @@ const IndexPage = () => (
           </React.Fragment>
         ))}
       </p>
+      <ul className={styles.list}>
+        <h1>מי אני</h1>
+        <p>פסקה קצרה עלי</p>
+      </ul>
     </div>
     {moreLinks.map((link, i) => (
       <React.Fragment key={link.url}>
