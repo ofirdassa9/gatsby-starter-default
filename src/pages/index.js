@@ -35,7 +35,7 @@ const links = [
 
 const samplePageLinks = [
   { text: "יצירת קשר", url: "using-typescript" },
-  { text: "פסקי דין", url: "page-2" },
+  { text: "פסקי דין", url: "using-ssr" },
 ]
 
 const moreLinks = [
@@ -78,27 +78,15 @@ const IndexPage = () => (
         <b>Roy Rotem Advocate</b>
       </h1>
       <p className={styles.intro}>
-      <Layout>
-        <Seo title="פסקי דין" />
-        <h1>פסקי דין</h1>
-        <p>אלו הם פסקי דין</p>
-        <Link to="/">עמוד ראשי</Link>
-      </Layout>
+        <b></b>{" "}
+        {samplePageLinks.map((link, i) => (
+          <React.Fragment key={link.url}>
+            <Link to={link.url}>{link.text}</Link>
+            {i !== samplePageLinks.length - 1 && <> · </>}
+          </React.Fragment>
+        ))}
       </p>
     </div>
-    <ul className={styles.list}>
-      {links.map(link => (
-        <li key={link.url} className={styles.listItem}>
-          <a
-            className={styles.listItemLink}
-            href={`${link.url}${utmParameters}`}
-          >
-            {link.text} ↗
-          </a>
-          <p className={styles.listItemDescription}>{link.description}</p>
-        </li>
-      ))}
-    </ul>
     {moreLinks.map((link, i) => (
       <React.Fragment key={link.url}>
         <a href={`${link.url}${utmParameters}`}>{link.text}</a>
