@@ -45,17 +45,9 @@
 }
 
 .textCenter {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  text-align: center;
-}
-
-.links {
   text-align: center;
 }
 
 .intro {
-  max-width: none;
-  line-height: var(--line-height-loose);
+  color: #159bf3;
 }

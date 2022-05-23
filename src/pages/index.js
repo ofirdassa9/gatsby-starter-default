@@ -66,25 +66,20 @@ const IndexPage = () => (
       <h1>
         <b>רועי רותם, משרד עו"ד</b>
       </h1>
-      <p className={styles.intro}>
-        <b></b>{" "}
-        {samplePageLinks.map((link, i) => (
-          <React.Fragment key={link.url}>
-            <Link to={link.url}>{link.text}</Link>
-            {i !== samplePageLinks.length - 1 && <> · </>}
-          </React.Fragment>
-        ))}
-      </p>
-      <b><h1>מי אני</h1></b>
+      <b><h1 className={styles.intro}>מי אני</h1></b>
       <div dir="rtl" >ספורט וכמקובל רבה אם. אל עוד עיצוב מיותר למחיקה, אם היא העזרה בקלות מיוחדים. על קישורים ומהימנה עוד, ערבית לציין בידור על שער. היום דפים חרטומים את שתי. אם שער ליום פיסול מאמרשיחהצפה. זכר על הספרות מדריכים אקטואליה, והוא סטטיסטיקה פסיכולוגיה מתן על, מה עוד יוני בחירות רב־לשוני. כימיה והנדסה פסיכולוגיה כדי מה, תנך על החלה ויקי ובמתן, ריקוד ספורט או מדע.</div>
     </div>
-    <div className={styles.links}>
+    <div className={styles.textCenter}>
       {moreLinks.map((link, i) => (
         <React.Fragment key={link.url}>
           <a href={`${link.url}${utmParameters}`} className={styles.intro}>{link.text}</a>
           {i !== moreLinks.length - 1 && <> · </>}
         </React.Fragment>
       ))}
+    </div>
+    <div className={styles.textCenter}>
+        <h1 className={styles.intro}>פסקי דין</h1>
+        <div>בדיקה בדיקה בדיקה בדיקה</div>
     </div>
   </Layout>
 )
