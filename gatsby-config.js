@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Roy Rotem Advocate`,
+    title: `רועי רותם משרד עו"ד`,
     author: `@gatsbyjs`,
   },
   plugins: [
