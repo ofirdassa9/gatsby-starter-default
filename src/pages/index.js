@@ -78,13 +78,13 @@ const IndexPage = () => (
       <b><h1>מי אני</h1></b>
       <br />
       <p>ספורט וכמקובל רבה אם. אל עוד עיצוב מיותר למחיקה, אם היא העזרה בקלות מיוחדים. על קישורים ומהימנה עוד, ערבית לציין בידור על שער. היום דפים חרטומים את שתי. אם שער ליום פיסול מאמרשיחהצפה. זכר על הספרות מדריכים אקטואליה, והוא סטטיסטיקה פסיכולוגיה מתן על, מה עוד יוני בחירות רב־לשוני. כימיה והנדסה פסיכולוגיה כדי מה, תנך על החלה ויקי ובמתן, ריקוד ספורט או מדע.</p>
+    </div>
     {moreLinks.map((link, i) => (
       <React.Fragment key={link.url}>
-        <a href={`${link.url}${utmParameters}`}>{link.text}</a>
+        <a href={`${link.url}${utmParameters}`} className={styles.intro}>{link.text}</a>
         {i !== moreLinks.length - 1 && <> · </>}
       </React.Fragment>
     ))}
-    </div>
   </Layout>
 )
 
