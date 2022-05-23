@@ -80,6 +80,23 @@ const IndexPage = () => (
     <br />
     <br />
     <div className={styles.textCenter}>
+      <h1>צור קשר</h1>
+      <table>
+        <tr>
+          <th>מייל</th>
+          <th>office@rotemadv.com</th>
+        </tr>
+        <tr>
+          <td>טלפון</td>
+          <td>0523456789</td>
+        </tr>
+        <tr>
+          <td>כתובת</td>
+          <td>כתובת כלשהי רשומה פה</td>
+        </tr>
+    </table>
+    </div>  
+    <div className={styles.textCenter}>
       {moreLinks.map((link, i) => (
         <React.Fragment key={link.url}>
           <a href={`${link.url}${utmParameters}`} className={styles.intro}>{link.text}</a>
