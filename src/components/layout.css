@@ -149,6 +149,9 @@ pre {
 b,
 strong,
 dt,
+th {
+  font-weight: bold;
+}
 li {
   margin-bottom: calc(var(--space-4) / 2);
 }
