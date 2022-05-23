@@ -34,16 +34,8 @@ const links = [
 ]
 
 const samplePageLinks = [
-  {
-    text: "Page 2",
-    url: "page-2",
-    badge: false,
-    description:
-      "A simple example of linking to another page within a Gatsby site",
-  },
-  { text: "TypeScript", url: "using-typescript" },
-  { text: "Server Side Rendering", url: "using-ssr" },
-  { text: "Deferred Static Generation", url: "using-dsg" },
+  { text: "יצירת קשר", url: "using-typescript" },
+  { text: "פסקי דין", url: "page-2" },
 ]
 
 const moreLinks = [
@@ -83,18 +75,15 @@ const IndexPage = () => (
         style={{ marginBottom: `var(--space-3)` }}
       />
       <h1>
-        Welcome to <b>Gatsby!</b>
+        <b>Roy Rotem Advocate</b>
       </h1>
       <p className={styles.intro}>
-        <b>Example pages:</b>{" "}
-        {samplePageLinks.map((link, i) => (
-          <React.Fragment key={link.url}>
-            <Link to={link.url}>{link.text}</Link>
-            {i !== samplePageLinks.length - 1 && <> · </>}
-          </React.Fragment>
-        ))}
-        <br />
-        Edit <code>src/pages/index.js</code> to update this page.
+      <Layout>
+        <Seo title="פסקי דין" />
+        <h1>פסקי דין</h1>
+        <p>אלו הם פסקי דין</p>
+        <Link to="/">עמוד ראשי</Link>
+      </Layout>
       </p>
     </div>
     <ul className={styles.list}>
