@@ -83,15 +83,15 @@ const IndexPage = () => (
       <h1>צור קשר</h1>
       <table className={styles.table}>
         <tr>
-          <td>מייל</td>
+          <th>מייל:</th>
           <td>office@rotemadv.com</td>
         </tr>
         <tr>
-          <td>טלפון</td>
+          <th>טלפון:</th>
           <td>0523456789</td>
         </tr>
         <tr>
-          <td>כתובת</td>
+          <th>כתובת:</th>
           <td>כתובת כלשהי רשומה פה</td>
         </tr>
     </table>
