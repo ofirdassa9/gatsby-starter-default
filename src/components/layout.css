@@ -76,6 +76,7 @@ h1 {
   padding: 0;
   line-height: var(--line-height-dense);
   letter-spacing: -0.01em;
+  color: cornflowerblue;
 }
 h1 > b {
   color: var(--color-primary);
