@@ -51,3 +51,8 @@
 .intro {
   color: #159bf3;
 }
+
+.links {
+  text-align: center;
+  color: var(--color-primary);
+}
