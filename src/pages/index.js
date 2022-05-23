@@ -75,11 +75,9 @@ const IndexPage = () => (
           </React.Fragment>
         ))}
       </p>
-      <ul className={styles.list}>
-        <b>
-          <h1>מי אני</h1>
+      <ul>
+          <b><h1>מי אני</h1></b>
           <p>פסקה קצרה עלי</p>
-        </b>
       </ul>
     </div>
     {moreLinks.map((link, i) => (
