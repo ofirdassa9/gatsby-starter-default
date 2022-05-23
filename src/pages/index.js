@@ -41,7 +41,7 @@ const moreLinks = [
   { text: "Facebook", url: "https://facebook.com" },
   {
     text: "Instagram",
-    url: "https://instagram",
+    url: "https://instagram.com",
   },
   {
     text: "Starters",
@@ -77,15 +77,15 @@ const IndexPage = () => (
       </p>
       <ul>
           <b><h1>מי אני</h1></b>
-          <h4>פסקה קצרה</h4>
+          <p className={styles.textCenter}>פסקה קצרה</p>
       </ul>
-    </div>
     {moreLinks.map((link, i) => (
       <React.Fragment key={link.url}>
         <a href={`${link.url}${utmParameters}`}>{link.text}</a>
         {i !== moreLinks.length - 1 && <> · </>}
       </React.Fragment>
     ))}
+    </div>
   </Layout>
 )
 
