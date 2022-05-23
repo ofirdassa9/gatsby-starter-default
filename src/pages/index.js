@@ -78,7 +78,6 @@ const IndexPage = () => (
       <ul className={styles.list}>
         <b>
           <h1>מי אני</h1>
-          <br />
           <p>פסקה קצרה עלי</p>
         </b>
       </ul>
