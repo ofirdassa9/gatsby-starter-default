@@ -81,7 +81,7 @@ const IndexPage = () => (
     <br />
     <div className={styles.textCenter}>
       <h1>צור קשר</h1>
-      <table>
+      <table className={styles.table}>
         <tr>
           <th>מייל</th>
           <th>office@rotemadv.com</th>

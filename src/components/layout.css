@@ -149,9 +149,6 @@ pre {
 b,
 strong,
 dt,
-th {
-  font-weight: bold;
-}
 li {
   margin-bottom: calc(var(--space-4) / 2);
 }
@@ -222,8 +219,4 @@ pre code:after,
 pre tt:before,
 pre tt:after {
   content: none;
-}
-
-table {
-  width: 30%;
 }
